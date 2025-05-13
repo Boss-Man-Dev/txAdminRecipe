@@ -65,16 +65,6 @@ tasks:
     dest: ./resources/[vrp-core]/[vrp-db-drivers]
     ref: main
     src: https://github.com/vRP-framework/vRP-db-drivers
-  
-  - action: download_github
-    dest: ./resources/[vrp]/vrp_loading
-    ref: main
-    src: https://github.com/Boss-Man-Dev/vrp_loading
-
-  - action: download_github
-    dest: ./resources/[vrp]/vrp_basic_mission
-    ref: main
-    src: https://github.com/vRP-framework/vRP-basic-mission
 
 # Clean up
   - action: remove_path
