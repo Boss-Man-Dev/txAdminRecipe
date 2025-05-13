@@ -6,7 +6,7 @@ description: A vRP deployment that contains essential functionality for the most
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/vrp-framework/txAdminRecipe
+    src: https://github.com/Boss-Man-Dev/txAdminRecipe
     ref: main
     dest: ./tmp/vrp
 
