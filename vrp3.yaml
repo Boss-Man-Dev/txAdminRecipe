@@ -59,10 +59,27 @@ tasks:
     ref: master
     src: https://github.com/vRP-framework/vRP
 
+  - action: download_file
+    path: ./tmp/files/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
+  - action: unzip
+    dest: ./resources/[dependencies]
+    src: ./tmp/files/oxmysql.zip
+
   - action: download_github
     dest: ./resources/[vrp-core]/[vrp-db-drivers]
     ref: master
     src: https://github.com/vRP-framework/vRP-db-drivers
+  
+  - action: download_github
+    dest: ./resources/[vrp]/vrp_loading
+    ref: main
+    src: https://github.com/Boss-Man-Dev/vrp_loading
+
+  - action: download_github
+    dest: ./resources/[vrp]/vrp_basic_mission
+    ref: master
+    src: https://github.com/vRP-framework/vRP-basic-mission
 
 # Clean up
   - action: remove_path
