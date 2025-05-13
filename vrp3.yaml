@@ -54,16 +54,14 @@ tasks:
     seconds: 10
 
 # Downloading vRP resources
-  - action: download_file
-    path: ./tmp/files/vRP-master.zip
-    url: https://github.com/vRP-framework/vRP/archive/refs/heads/master.zip
-  - action: unzip
+  - action: download_github
     dest: ./resources/[vrp-core]/vrp
-    src: ./tmp/files/vRP-master.zip
+    ref: master
+    src: https://github.com/vRP-framework/vRP
 
   - action: download_github
     dest: ./resources/[vrp-core]/[vrp-db-drivers]
-    ref: main
+    ref: master
     src: https://github.com/vRP-framework/vRP-db-drivers
 
 # Clean up
