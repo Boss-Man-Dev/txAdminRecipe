@@ -60,11 +60,11 @@ tasks:
     src: https://github.com/vRP-framework/vRP
 
   - action: download_file
-    path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
+    path: ./tmp/files/vRP-master.zip
+    url: https://github.com/vRP-framework/vRP/archive/refs/heads/master.zip
   - action: unzip
-    dest: ./resources/[dependencies]
-    src: ./tmp/files/oxmysql.zip
+    dest: ./resources/[vrp-core]/vrp
+    src: ./tmp/files/vRP-master.zip
 
   - action: download_github
     dest: ./resources/[vrp-core]/[vrp-db-drivers]
